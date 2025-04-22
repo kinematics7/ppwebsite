@@ -9,64 +9,39 @@ export default function GalleryPage() {
 
   const galleryImages = [
     {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Arcade machine setup at event",
+      src: "/IMG_9425 (1).jpg",
+      alt: "Park and Play arcade setup",
       category: "events",
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Birthday party arcade setup",
+      src: "/IMG_9634-scaled.jpg",
+      alt: "Arcade machine at event",
       category: "events",
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Pac-Man arcade machine",
+      src: "/IMG_9640 (2).jpg",
+      alt: "Arcade gaming experience",
+      category: "events",
+    },
+    {
+      src: "/IMG_9642-rotated.jpg",
+      alt: "Arcade cabinet setup",
       category: "machines",
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Wedding reception arcade corner",
-      category: "events",
-    },
-    {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Street Fighter II cabinet",
+      src: "/IMG_9646-rotated.jpg",
+      alt: "Classic arcade machine",
       category: "machines",
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Kids playing arcade games",
-      category: "people",
+      src: "/IMG_9650 (1).jpg",
+      alt: "Retro gaming setup",
+      category: "setup",
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Retro gaming tournament",
+      src: "/IMG_9936-1.jpg",
+      alt: "Arcade gaming event",
       category: "events",
-    },
-    {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Mortal Kombat arcade cabinet",
-      category: "machines",
-    },
-    {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Mobile arcade truck exterior",
-      category: "setup",
-    },
-    {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Arcade setup at outdoor festival",
-      category: "setup",
-    },
-    {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "People enjoying arcade games",
-      category: "people",
-    },
-    {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Retro arcade lighting setup",
-      category: "setup",
     },
   ]
 
@@ -86,7 +61,7 @@ export default function GalleryPage() {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {galleryImages.map((image, index) => (
             <motion.div
               key={index}
