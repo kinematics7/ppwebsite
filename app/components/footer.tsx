@@ -31,8 +31,8 @@ export default function Footer() {
               </h3>
             </div>
             <p className="text-gray-400 mb-4">
-              Bringing the authentic 80s arcade experience to your events. Our mobile arcade setup brings the nostalgia
-              and fun directly to you!
+              Bringing the authentic arcade experience to your events. Our mobile arcade setup brings the nostalgia and
+              fun directly to you!
             </p>
             <p className="text-sm text-gray-500">
               © {new Date().getFullYear()} Park & Play Mobile Arcade. All rights reserved.
@@ -49,15 +49,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-gray-400 hover:text-pink-400 transition-colors">
                 <MapPin className="h-5 w-5 text-pink-500" />
-                <span>Los Angeles, CA</span>
+                <span>Tampa, FL</span>
               </li>
               <li className="flex items-center gap-2 text-gray-400 hover:text-pink-400 transition-colors">
                 <Phone className="h-5 w-5 text-pink-500" />
-                <span>(555) 123-4567</span>
+                <span>(656) 217-0624</span>
               </li>
               <li className="flex items-center gap-2 text-gray-400 hover:text-pink-400 transition-colors">
                 <Mail className="h-5 w-5 text-pink-500" />
-                <span>info@parkandplay.com</span>
+                <span>info@parkandplayarcade.com</span>
               </li>
             </ul>
           </motion.div>
@@ -91,9 +91,7 @@ export default function Footer() {
             </div>
             <div className="mt-6">
               <h4 className="text-lg font-bold text-pink-400 mb-2">Service Areas</h4>
-              <p className="text-gray-400">
-                Los Angeles • Orange County • San Diego • Ventura County • And surrounding areas
-              </p>
+              <p className="text-gray-400">Tampa • St. Petersburg • Clearwater • Brandon • And surrounding areas</p>
             </div>
           </motion.div>
         </div>

@@ -89,7 +89,7 @@ export default function ContactPage() {
               Contact Us
             </h1>
             <p className="text-lg text-cyan-300 max-w-2xl mx-auto">
-              Ready to bring the ultimate 80s arcade experience to your next event? Get in touch with us today!
+              Ready to bring the ultimate arcade experience to your next event? Get in touch with us today!
             </p>
           </motion.div>
         </div>
@@ -112,7 +112,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white">Phone</h3>
-                  <p className="text-gray-300">(555) 123-4567</p>
+                  <p className="text-gray-300">(656) 217-0624</p>
                   <p className="text-sm text-gray-400 mt-1">Available Mon-Fri, 9am-6pm</p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white">Email</h3>
-                  <p className="text-gray-300">info@parkandplay.com</p>
+                  <p className="text-gray-300">info@parkandplayarcade.com</p>
                   <p className="text-sm text-gray-400 mt-1">We'll respond within 24 hours</p>
                 </div>
               </div>
@@ -134,8 +134,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white">Location</h3>
-                  <p className="text-gray-300">Los Angeles, CA</p>
-                  <p className="text-sm text-gray-400 mt-1">Serving all of Southern California</p>
+                  <p className="text-gray-300">Tampa, FL</p>
+                  <p className="text-sm text-gray-400 mt-1">Serving Tampa Bay and surrounding areas</p>
                 </div>
               </div>
 
@@ -153,14 +153,14 @@ export default function ContactPage() {
 
             <div className="mt-12">
               <h3 className="text-xl font-bold text-pink-400 mb-4">Service Areas</h3>
-              <p className="text-gray-300 mb-2">We bring our mobile arcade to events throughout Southern California:</p>
+              <p className="text-gray-300 mb-2">We bring our mobile arcade to events throughout Tampa Bay:</p>
               <ul className="list-disc list-inside text-gray-300 space-y-1">
-                <li>Los Angeles County</li>
-                <li>Orange County</li>
-                <li>San Diego County</li>
-                <li>Ventura County</li>
-                <li>Riverside County</li>
-                <li>San Bernardino County</li>
+                <li>Tampa</li>
+                <li>St. Petersburg</li>
+                <li>Clearwater</li>
+                <li>Brandon</li>
+                <li>Wesley Chapel</li>
+                <li>Lakeland</li>
               </ul>
               <p className="text-sm text-gray-400 mt-4">
                 For locations outside these areas, please contact us for availability and additional travel fees.

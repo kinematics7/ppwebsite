@@ -10,7 +10,7 @@ export default function GalleryPage() {
   const galleryImages = [
     {
       src: "/placeholder.svg?height=600&width=800",
-      alt: "Corporate event with arcade machines",
+      alt: "Arcade machine setup at event",
       category: "events",
     },
     {
@@ -45,7 +45,7 @@ export default function GalleryPage() {
     },
     {
       src: "/placeholder.svg?height=600&width=800",
-      alt: "Donkey Kong arcade cabinet",
+      alt: "Mortal Kombat arcade cabinet",
       category: "machines",
     },
     {

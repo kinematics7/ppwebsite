@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { History, Truck, Users, Heart } from "lucide-react"
+import { History, Truck, Heart } from "lucide-react"
 import Logo from "../components/logo"
 
 export default function AboutPage() {
@@ -21,7 +21,7 @@ export default function AboutPage() {
               About Park & Play
             </h1>
             <p className="text-lg text-cyan-300 max-w-2xl mx-auto">
-              Bringing the authentic 80s arcade experience directly to your events
+              Bringing the authentic arcade experience directly to your events
             </p>
           </motion.div>
         </div>
@@ -43,18 +43,18 @@ export default function AboutPage() {
             </div>
             <div className="prose prose-lg prose-invert max-w-none">
               <p>
-                Park & Play was born from a passion for classic arcade gaming and a desire to share that nostalgic
-                experience with others. Founded in 2018 by lifelong gamers Mike and Sarah Johnson, our mobile arcade
-                business began with just three classic machines and a dream.
+                Welcome to our mobile arcade business! We are a husband and wife duo team that share a passion for old
+                classic arcade games and a little competition. A hobby turned business, we wanted to share that love and
+                passion by bringing the fun to you.
               </p>
               <p>
-                What started as weekend rentals for birthday parties quickly grew into a full-service mobile arcade
-                experience. Today, we proudly own over 30 fully-restored classic arcade cabinets from the golden age of
-                arcade gaming.
+                Our mission is to provide a unique and exciting experience for all ages with our mobile arcade trailer
+                that offers a wide selection of games. Whether it's a birthday party, corporate event, or fundraiser,
+                we've got you covered.
               </p>
               <p>
-                Our mission is simple: bring the authentic arcade experience of the 80s and early 90s to modern events,
-                creating unforgettable memories and introducing new generations to the games that defined an era.
+                We will ensure that your event runs smoothly from start to finish and will create a fun and safe
+                environment for everyone to enjoy. Book us for your next event and let us bring the party to you!
               </p>
             </div>
           </motion.div>
@@ -106,62 +106,6 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-cyan-300 mb-2">{step.title}</h3>
                 <p className="text-gray-300">{step.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        {/* Our Team */}
-        <motion.section
-          className="mb-20"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ staggerChildren: 0.2 }}
-        >
-          <motion.div variants={fadeIn} className="text-center mb-10">
-            <Users className="h-12 w-12 mx-auto text-pink-500 mb-4" />
-            <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400 mb-4">
-              Meet Our Team
-            </h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              The passionate arcade enthusiasts behind Park & Play
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Mike Johnson",
-                role: "Founder & Arcade Technician",
-                image: "/placeholder.svg?height=400&width=400",
-                bio: "Mike has been restoring arcade machines for over 15 years and knows every circuit board by heart.",
-              },
-              {
-                name: "Sarah Johnson",
-                role: "Co-Founder & Event Coordinator",
-                image: "/placeholder.svg?height=400&width=400",
-                bio: "Sarah handles all event logistics and ensures every detail is perfect for your arcade experience.",
-              },
-              {
-                name: "Alex Rivera",
-                role: "Technical Specialist",
-                image: "/placeholder.svg?height=400&width=400",
-                bio: "Alex keeps our machines running perfectly and can fix any arcade issue on the spot.",
-              },
-            ].map((member, index) => (
-              <motion.div key={index} variants={fadeIn} className="text-center">
-                <div className="mb-4 relative group">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-pink-600 to-cyan-600 rounded-full opacity-75 group-hover:opacity-100 blur transition duration-300"></div>
-                  <img
-                    src={member.image || "/placeholder.svg"}
-                    alt={member.name}
-                    className="relative w-40 h-40 mx-auto rounded-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
-                <p className="text-pink-400 mb-3">{member.role}</p>
-                <p className="text-gray-300">{member.bio}</p>
               </motion.div>
             ))}
           </div>

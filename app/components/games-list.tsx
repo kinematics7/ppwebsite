@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 export default function GamesList() {
   const [selectedCategory, setSelectedCategory] = useState("all")
 
-  const categories = ["all", "classics", "racing", "fighting", "puzzle"]
+  const categories = ["all", "classics", "racing", "fighting", "multiplayer"]
 
   const games = [
     {
@@ -20,38 +20,96 @@ export default function GamesList() {
     },
     {
       id: 2,
-      title: "Space Invaders",
-      category: "classics",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "1978",
-    },
-    {
-      id: 3,
-      title: "OutRun",
-      category: "racing",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "1986",
-    },
-    {
-      id: 4,
-      title: "Street Fighter II",
-      category: "fighting",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "1987",
-    },
-    {
-      id: 5,
-      title: "Tetris",
-      category: "puzzle",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "1984",
-    },
-    {
-      id: 6,
-      title: "Donkey Kong",
+      title: "Galaga",
       category: "classics",
       image: "/placeholder.svg?height=400&width=600",
       year: "1981",
+    },
+    {
+      id: 3,
+      title: "The Fast and The Furious",
+      category: "racing",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "2004",
+    },
+    {
+      id: 4,
+      title: "Street Fighter 2",
+      category: "fighting",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1991",
+    },
+    {
+      id: 5,
+      title: "Mortal Kombat",
+      category: "fighting",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1992",
+    },
+    {
+      id: 6,
+      title: "Joust",
+      category: "classics",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1982",
+    },
+    {
+      id: 7,
+      title: "NFL Blitz",
+      category: "multiplayer",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1997",
+      description: "4 player",
+    },
+    {
+      id: 8,
+      title: "X-Men",
+      category: "multiplayer",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1992",
+      description: "4 player",
+    },
+    {
+      id: 9,
+      title: "Tempest",
+      category: "classics",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1981",
+    },
+    {
+      id: 10,
+      title: "Asteroids",
+      category: "classics",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1979",
+    },
+    {
+      id: 11,
+      title: "Centipede",
+      category: "classics",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1981",
+    },
+    {
+      id: 12,
+      title: "Missile Command",
+      category: "classics",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1980",
+    },
+    {
+      id: 13,
+      title: "Crystal Castles",
+      category: "classics",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1983",
+    },
+    {
+      id: 14,
+      title: "Tapper",
+      category: "classics",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1983",
     },
   ]
 
@@ -126,6 +184,7 @@ export default function GamesList() {
                       <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-t from-purple-900/80 via-blue-900/60 to-transparent opacity-100">
                         <h3 className="text-2xl font-bold text-white">{game.title}</h3>
                         <p className="mt-2 text-sm text-cyan-300">{game.year}</p>
+                        {game.description && <p className="text-pink-300">{game.description}</p>}
                       </div>
                     </div>
                   </CardContent>

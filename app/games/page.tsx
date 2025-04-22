@@ -9,7 +9,7 @@ import { Gamepad2 } from "lucide-react"
 export default function GamesPage() {
   const [selectedCategory, setSelectedCategory] = useState("all")
 
-  const categories = ["all", "classics", "racing", "fighting", "puzzle", "shooters"]
+  const categories = ["all", "classics", "racing", "fighting", "multiplayer"]
 
   const games = [
     {
@@ -22,70 +22,30 @@ export default function GamesPage() {
     },
     {
       id: 2,
-      title: "Space Invaders",
-      category: "shooters",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "1978",
-      description: "Defend Earth from waves of descending alien invaders.",
-    },
-    {
-      id: 3,
-      title: "OutRun",
-      category: "racing",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "1986",
-      description: "Race a Ferrari Testarossa convertible across beautiful coastal landscapes.",
-    },
-    {
-      id: 4,
-      title: "Street Fighter II",
-      category: "fighting",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "1987",
-      description: "Battle opponents in one-on-one martial arts combat.",
-    },
-    {
-      id: 5,
-      title: "Tetris",
-      category: "puzzle",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "1984",
-      description: "Arrange falling tetromino blocks to create complete lines.",
-    },
-    {
-      id: 6,
-      title: "Donkey Kong",
-      category: "classics",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "1981",
-      description: "Help Mario rescue the princess from the giant ape Donkey Kong.",
-    },
-    {
-      id: 7,
       title: "Galaga",
-      category: "shooters",
+      category: "classics",
       image: "/placeholder.svg?height=400&width=600",
       year: "1981",
       description: "Pilot a starfighter and shoot down waves of alien insects.",
     },
     {
-      id: 8,
-      title: "Ms. Pac-Man",
-      category: "classics",
-      image: "/placeholder.svg?height=400&width=600",
-      year: "1982",
-      description: "Navigate through mazes while eating dots and avoiding ghosts.",
-    },
-    {
-      id: 9,
-      title: "Pole Position",
+      id: 3,
+      title: "The Fast and The Furious",
       category: "racing",
       image: "/placeholder.svg?height=400&width=600",
-      year: "1982",
-      description: "Race Formula 1 cars on the Fuji Speedway.",
+      year: "2004",
+      description: "Race through city streets in this high-speed arcade racing game.",
     },
     {
-      id: 10,
+      id: 4,
+      title: "Street Fighter 2",
+      category: "fighting",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1991",
+      description: "Battle opponents in one-on-one martial arts combat.",
+    },
+    {
+      id: 5,
       title: "Mortal Kombat",
       category: "fighting",
       image: "/placeholder.svg?height=400&width=600",
@@ -93,20 +53,76 @@ export default function GamesPage() {
       description: "Engage in brutal martial arts combat with special moves and fatalities.",
     },
     {
-      id: 11,
-      title: "Bubble Bobble",
-      category: "puzzle",
+      id: 6,
+      title: "Joust",
+      category: "classics",
       image: "/placeholder.svg?height=400&width=600",
-      year: "1986",
-      description: "Trap enemies in bubbles and pop them to clear levels.",
+      year: "1982",
+      description: "Ride a flying ostrich and joust against enemy knights.",
     },
     {
-      id: 12,
+      id: 7,
+      title: "NFL Blitz",
+      category: "multiplayer",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1997",
+      description: "4-player arcade-style football game with over-the-top action.",
+    },
+    {
+      id: 8,
+      title: "X-Men",
+      category: "multiplayer",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1992",
+      description: "4-player side-scrolling beat 'em up featuring Marvel's X-Men.",
+    },
+    {
+      id: 9,
+      title: "Tempest",
+      category: "classics",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1981",
+      description: "Navigate a claw-shaped spaceship around the edge of geometric shapes.",
+    },
+    {
+      id: 10,
+      title: "Asteroids",
+      category: "classics",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1979",
+      description: "Control a spaceship and destroy asteroids while avoiding UFOs.",
+    },
+    {
+      id: 11,
       title: "Centipede",
-      category: "shooters",
+      category: "classics",
       image: "/placeholder.svg?height=400&width=600",
       year: "1981",
       description: "Shoot at a descending centipede that splits into segments when hit.",
+    },
+    {
+      id: 12,
+      title: "Missile Command",
+      category: "classics",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1980",
+      description: "Defend cities from incoming missiles using counter-missiles.",
+    },
+    {
+      id: 13,
+      title: "Crystal Castles",
+      category: "classics",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1983",
+      description: "Guide Bentley Bear through a 3D maze collecting gems and avoiding enemies.",
+    },
+    {
+      id: 14,
+      title: "Tapper",
+      category: "classics",
+      image: "/placeholder.svg?height=400&width=600",
+      year: "1983",
+      description: "Serve drinks to impatient customers before they reach the end of the bar.",
     },
   ]
 
@@ -122,8 +138,8 @@ export default function GamesPage() {
               Our Arcade Games
             </h1>
             <p className="text-lg text-cyan-300 max-w-2xl mx-auto">
-              Browse our collection of authentic arcade classics from the 80s and early 90s. All machines are fully
-              restored and ready to bring the nostalgic gaming experience to your event.
+              Browse our collection of authentic arcade classics. All machines are fully restored and ready to bring the
+              nostalgic gaming experience to your event.
             </p>
           </motion.div>
         </div>

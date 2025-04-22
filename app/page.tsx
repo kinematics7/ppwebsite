@@ -42,14 +42,14 @@ export default function Page() {
                 description: "The iconic maze chase game that defined a generation",
               },
               {
-                title: "Street Fighter II",
+                title: "NFL Blitz",
                 image: "/placeholder.svg?height=300&width=400",
-                description: "The legendary fighting game that revolutionized arcades",
+                description: "4-player arcade-style football game with over-the-top action",
               },
               {
-                title: "Galaga",
+                title: "Street Fighter 2",
                 image: "/placeholder.svg?height=300&width=400",
-                description: "The space shooter classic with endless alien waves",
+                description: "The legendary fighting game that revolutionized arcades",
               },
             ].map((game, index) => (
               <motion.div
@@ -98,7 +98,7 @@ export default function Page() {
                 for birthdays, corporate events, weddings, and more!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact">
+                <Link href="/contact#booking-form">
                   <Button className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-bold text-lg px-8 py-6 h-auto shadow-[0_0_15px_rgba(255,0,255,0.3)]">
                     BOOK NOW
                   </Button>
