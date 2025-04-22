@@ -38,17 +38,17 @@ export default function Page() {
             {[
               {
                 title: "Pac-Man",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/pacman.png?height=300&width=400",
                 description: "The iconic maze chase game that defined a generation",
               },
               {
                 title: "NFL Blitz",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/blitz.png?height=300&width=400",
                 description: "4-player arcade-style football game with over-the-top action",
               },
               {
                 title: "Street Fighter 2",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/streetfighter.png?height=300&width=400",
                 description: "The legendary fighting game that revolutionized arcades",
               },
             ].map((game, index) => (

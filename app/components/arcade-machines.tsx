@@ -10,7 +10,7 @@ export default function ArcadeMachines() {
 
   const machines = [
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "/pacman.png?height=600&width=400",
       alt: "Pac-Man arcade machine",
       title: "Pac-Man",
     },
@@ -25,7 +25,7 @@ export default function ArcadeMachines() {
       title: "Donkey Kong",
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "/galaga.png?height=600&width=400",
       alt: "Galaga arcade machine",
       title: "Galaga",
     },
