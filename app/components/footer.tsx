@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { MapPin, Phone, Mail, Instagram, Twitter, Facebook } from "lucide-react"
+import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react"
 import Logo from "./logo"
 
 export default function Footer() {
@@ -71,19 +71,13 @@ export default function Footer() {
             <h3 className="text-xl font-bold text-cyan-400 mb-4">Follow Us</h3>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/parkandplayarcade/"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-pink-600 to-purple-600 text-white hover:from-pink-500 hover:to-purple-500 transition-all shadow-[0_0_10px_rgba(255,0,255,0.3)]"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-cyan-600 to-blue-600 text-white hover:from-cyan-500 hover:to-blue-500 transition-all shadow-[0_0_10px_rgba(0,255,255,0.3)]"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
+                href="https://www.facebook.com/ParkandPlayArcade/"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-500 hover:to-purple-500 transition-all shadow-[0_0_10px_rgba(0,0,255,0.3)]"
               >
                 <Facebook className="h-5 w-5" />
