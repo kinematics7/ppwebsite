@@ -29,11 +29,6 @@ export default function GalleryPage() {
       category: "machines",
     },
     {
-      src: "/IMG_9646-rotated.jpg",
-      alt: "Classic arcade machine",
-      category: "machines",
-    },
-    {
       src: "/IMG_9650 (1).jpg",
       alt: "Retro gaming setup",
       category: "setup",
