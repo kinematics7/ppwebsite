@@ -47,11 +47,13 @@ export default function AboutPage() {
                 classic arcade games and a little competition. A hobby turned business, we wanted to share that love and
                 passion by bringing the fun to you.
               </p>
+              <br></br>
               <p>
                 Our mission is to provide a unique and exciting experience for all ages with our mobile arcade trailer
                 that offers a wide selection of games. Whether it's a birthday party, corporate event, or fundraiser,
                 we've got you covered.
               </p>
+              <br></br>
               <p>
                 We will ensure that your event runs smoothly from start to finish and will create a fun and safe
                 environment for everyone to enjoy. Book us for your next event and let us bring the party to you!
