@@ -62,23 +62,34 @@ export default function ContactPage() {
     }
   }, [])
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true)
-
-    // Simulate API call with timeout
-    setTimeout(() => {
-      console.log(values)
-      setIsSubmitting(false)
+  
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(values),
+      })
+      const json = await res.json()
+  
+      if (!res.ok || !json.success) {
+        throw new Error(json.error || 'Failed to send message')
+      }
+  
+      // success!
       setIsSuccess(true)
       form.reset()
-
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setIsSuccess(false)
-      }, 5000)
-    }, 1500)
+    } catch (err: any) {
+      console.error('Error sending message:', err)
+      // optionally surface an error to the user here
+    } finally {
+      setIsSubmitting(false)
+      // hide the success banner after 5 seconds
+      setTimeout(() => setIsSuccess(false), 5000)
+    }
   }
-
+  
   return (
     <div className="pt-24 min-h-screen bg-gradient-to-b from-black to-purple-950">
       <div className="container mx-auto px-4 py-12">
