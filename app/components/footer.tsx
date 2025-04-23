@@ -31,11 +31,11 @@ export default function Footer() {
               </h3>
             </div>
             <p className="text-gray-400 mb-4">
-              Bringing the authentic arcade experience to your events. Our mobile arcade setup brings the nostalgia and
+              Bringing the arcade experience to your events. Our mobile arcade setup brings the nostalgia and
               fun directly to you!
             </p>
             <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} Park & Play Mobile Arcade. All rights reserved.
+              © {new Date().getFullYear()} Park & Play Arcade LLC. All rights reserved.
             </p>
           </motion.div>
 

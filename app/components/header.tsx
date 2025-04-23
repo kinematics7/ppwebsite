@@ -47,7 +47,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-2 z-50">
             <Logo width={40} height={40} animate={false} />
             <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
-              PARK & PLAY
+              PARK & PLAY ARCADE
             </span>
           </Link>
 

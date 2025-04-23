@@ -144,7 +144,7 @@ export default function GamesList() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Choose from our collection of authentic arcade hits
+          Choose from our collection of arcade hits
         </motion.p>
         <div className="mb-12 flex flex-wrap justify-center gap-4">
           {categories.map((category) => (

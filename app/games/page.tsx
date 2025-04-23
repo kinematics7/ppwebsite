@@ -130,8 +130,7 @@ export default function GamesPage() {
               Our Arcade Games
             </h1>
             <p className="text-lg text-cyan-300 max-w-2xl mx-auto">
-              Browse our collection of authentic arcade classics. All machines are fully restored and ready to bring the
-              nostalgic gaming experience to your event.
+              Browse our collection of arcade classics. Choose your favorite game and get ready to play! We have a wide variety of games to suit all tastes and ages.
             </p>
           </motion.div>
         </div>

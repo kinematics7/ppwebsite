@@ -21,7 +21,7 @@ export default function AboutPage() {
               About Park & Play
             </h1>
             <p className="text-lg text-cyan-300 max-w-2xl mx-auto">
-              Bringing the authentic arcade experience directly to your events
+              Bringing the 80s arcade experience directly to your events
             </p>
           </motion.div>
         </div>
@@ -93,7 +93,7 @@ export default function AboutPage() {
                 step: "3",
                 title: "Play & Enjoy",
                 description:
-                  "Your guests enjoy unlimited play on authentic arcade machines. When the event is over, we pack up and leave everything clean and tidy.",
+                  "Your guests enjoy unlimited play on arcade machines. When the event is over, we pack up and leave everything clean and tidy.",
               },
             ].map((step, index) => (
               <motion.div
@@ -130,10 +130,11 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {[
+
               {
-                title: "Authenticity",
+                title: "Affordability",
                 description:
-                  "We're committed to providing the most authentic arcade experience possible, with original machines and genuine parts.",
+                  "We offer competitive pricing without compromising on quality. Get the best value for your event.",
               },
               {
                 title: "Reliability",

@@ -117,7 +117,7 @@ export default function Hero() {
             className="text-6xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-cyan-400 to-yellow-400 sm:text-7xl lg:text-8xl"
             variants={slideIn}
           >
-            PARK & PLAY
+            PARK & PLAY ARCADE
           </motion.h1>
         </motion.div>
 

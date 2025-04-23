@@ -57,7 +57,7 @@ export default function ArcadeMachines() {
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Authentic 80s arcade cabinets ready to roll to your location
+          80s arcade cabinets ready to roll to your location
         </motion.p>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {machines.map((machine, index) => (
