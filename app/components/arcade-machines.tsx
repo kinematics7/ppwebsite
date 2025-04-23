@@ -15,14 +15,14 @@ export default function ArcadeMachines() {
       title: "Pac-Man",
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "/spaceinvaders.png?height=600&width=400",
       alt: "Space Invaders arcade machine",
       title: "Space Invaders",
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
-      alt: "Donkey Kong arcade machine",
-      title: "Donkey Kong",
+      src: "/streetfighter.png?height=600&width=400",
+      alt: "Street Fighter 2 arcade machine",
+      title: "Street Fighter 2",
     },
     {
       src: "/galaga.png?height=600&width=400",
