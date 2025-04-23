@@ -1,8 +1,13 @@
+// app/api/contact/route.ts
+
 import { NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
 
 export async function POST(request: Request) {
+  // 1. Entry log
   console.log('🌐  /api/contact handler start')
+
+  // 2. Show what env vars are actually loaded
   console.log('Env:', {
     user: !!process.env.SMTP_USER,
     pass: !!process.env.SMTP_PASS,
@@ -11,17 +16,19 @@ export async function POST(request: Request) {
     to: process.env.EMAIL_TO,
   })
 
+  // 3. Parse the incoming JSON payload
   const { name, email, eventType, date, message } = await request.json()
 
+  // 4. Configure the transporter for Gmail
   const transporter = nodemailer.createTransport({
-    service: 'gmail',              // using Gmail service
+    service: 'gmail',
     auth: {
       user: process.env.SMTP_USER!,
       pass: process.env.SMTP_PASS!,
     },
   })
 
-  // Verify SMTP connection configuration
+  // 5. Verify SMTP connection
   try {
     await transporter.verify()
     console.log('✅ SMTP connection OK')
@@ -33,7 +40,7 @@ export async function POST(request: Request) {
     )
   }
 
-  // Try to send the mail
+  // 6. Attempt to send the email
   try {
     const info = await transporter.sendMail({
       from: `"${name}" <${email}>`,
