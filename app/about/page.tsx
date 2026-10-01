@@ -50,8 +50,8 @@ export default function AboutPage() {
               <br></br>
               <p>
                 Our mission is to provide a unique and exciting experience for all ages with our mobile arcade trailer
-                that offers a wide selection of games. Whether it's a birthday party, corporate event, or fundraiser,
-                we've got you covered.
+                that offers a wide selection of games. Whether it&apos;s a birthday party, corporate event, or fundraiser,
+                we&apos;ve got you covered.
               </p>
               <br></br>
               <p>

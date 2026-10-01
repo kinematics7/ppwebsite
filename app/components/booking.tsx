@@ -73,7 +73,7 @@ export default function Booking() {
             Book Your Event
           </h2>
           <p className="mb-8 text-lg text-pink-300">
-            Ready to bring the ultimate 80s arcade experience to your next event? Fill out the form below and let's get
+            Ready to bring the ultimate 80s arcade experience to your next event? Fill out the form below and let&apos;s get
             the games rolling!
           </p>
         </motion.div>
