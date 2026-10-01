@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import { motion } from "framer-motion"
+import { motion, type Variants } from "framer-motion"
 import Logo from "./logo"
 import Link from "next/link"
 
@@ -80,7 +80,7 @@ export default function Hero() {
     },
   }
 
-  const slideIn = {
+  const slideIn: Variants = {
     hidden: { x: -100, opacity: 0 },
     visible: {
       x: 0,

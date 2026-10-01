@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, type Variants } from "framer-motion"
 
 interface LogoProps {
   className?: string
@@ -26,7 +26,7 @@ export default function Logo({ className = "", width = 80, height = 80, animate 
     visible: { opacity: 1 },
   }
 
-  const wheels = {
+  const wheels: Variants = {
     hidden: { x: -10, opacity: 0 },
     visible: {
       x: 0,

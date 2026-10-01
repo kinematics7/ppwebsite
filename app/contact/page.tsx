@@ -47,6 +47,7 @@ export default function ContactPage() {
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
   const scrollToForm = () => {
     if (formRef.current) {
@@ -64,6 +65,8 @@ export default function ContactPage() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true)
+    setSubmitError(null)
+    setIsSuccess(false)
   
     try {
       const res = await fetch('/api/contact', {
@@ -80,9 +83,8 @@ export default function ContactPage() {
       // success!
       setIsSuccess(true)
       form.reset()
-    } catch (err: any) {
-      console.error('Error sending message:', err)
-      // optionally surface an error to the user here
+    } catch {
+      setSubmitError('Your request could not be sent. Please try again, email info@parkandplayarcade.com, or call (656) 217-0624.')
     } finally {
       setIsSubmitting(false)
       // hide the success banner after 5 seconds
@@ -135,7 +137,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-white">Email</h3>
                   <p className="text-gray-300">info@parkandplayarcade.com</p>
-                  <p className="text-sm text-gray-400 mt-1">We'll respond within 24 hours</p>
+                  <p className="text-sm text-gray-400 mt-1">We&apos;ll respond within 24 hours</p>
                 </div>
               </div>
 
@@ -315,6 +317,11 @@ export default function ContactPage() {
                 </Button>
               </form>
             </Form>
+            {submitError && (
+              <p role="alert" className="mt-6 rounded-lg border border-red-400 bg-red-950/50 p-4 text-red-100">
+                {submitError}
+              </p>
+            )}
             {isSuccess && (
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
@@ -322,7 +329,7 @@ export default function ContactPage() {
                 className="mt-6 p-4 bg-gradient-to-r from-green-500/20 to-cyan-500/20 border border-green-500 rounded-lg"
               >
                 <p className="text-green-400 font-medium text-center">
-                  Thanks for your booking request! We'll contact you soon.
+                  Thanks for your booking request! We&apos;ll contact you soon.
                 </p>
               </motion.div>
             )}
